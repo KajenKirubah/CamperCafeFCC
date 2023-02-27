@@ -1,3 +1,82 @@
-.h1camper {
-    color: blue;
+@import "./modules/mixins.css";
+@import './modules/footer.css';
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Impact, serif;
+}
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+h2 {
+    font-size: 30px;
+}
+body {
+    background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.menu {
+    width: 80%;
+    max-width: 500px;
+    background-color: burlywood;
+    margin: 0 auto;
+    padding: 20px;
+}
+.established {
+    font-style: italic;
+}
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -25px;
+}
+.item {
+    p {
+        display: inline-block;
+        margin: 5px 0;
+        font-size: 18px;
+    }
+    &__flavor, &__dessert {
+        text-align: left;
+        width: 75%;
+    }
+
+    &__price {
+        text-align: right;
+        width: 25%;
+    }
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+footer {
+    font-size: 14px;
+
+    a {
+        color: black;
+    }
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: brown;
+    }
+
+    a:active {
+        color: brown;
+    }
 }

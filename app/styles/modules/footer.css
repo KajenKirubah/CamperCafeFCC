@@ -1,0 +1,10 @@
+/* FOOTER */
+
+footer {
+    font-size: 14px;
+    color: black !important;
+
+    a {
+        color: black;
+    }
+}
