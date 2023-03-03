@@ -1,0 +1,7 @@
+.submenu {
+    margin-bottom: 15px;
+
+    @mixin atSmall {
+        margin-bottom: 0;
+    }
+}

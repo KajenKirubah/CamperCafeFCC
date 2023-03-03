@@ -1,0 +1,19 @@
+/* FOOTER */
+footer {
+    font-size: 14px;
+
+    a {
+        color: black;
+    }
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: brown;
+    }
+
+    a:active {
+        color: brown;
+    }
+}

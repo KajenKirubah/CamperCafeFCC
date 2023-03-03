@@ -1,5 +1,11 @@
-@import "./modules/mixins.css";
-@import './modules/footer.css';
+@import './base/_mixins';
+@import './modules/_footer';
+@import './modules/_item';
+@import './modules/_submenu';
+
+html {
+    font-size: 62.5%;
+}
 
 h1, h2, p {
     text-align: center;
@@ -41,42 +47,9 @@ img {
     margin: 0 auto;
     margin-top: -25px;
 }
-.item {
-    p {
-        display: inline-block;
-        margin: 5px 0;
-        font-size: 18px;
-    }
-    &__flavor, &__dessert {
-        text-align: left;
-        width: 75%;
-    }
 
-    &__price {
-        text-align: right;
-        width: 25%;
-    }
-}
 
 .bottom-line {
     margin-top: 25px;
 }
 
-footer {
-    font-size: 14px;
-
-    a {
-        color: black;
-    }
-    a:visited {
-        color: black;
-    }
-
-    a:hover {
-        color: brown;
-    }
-
-    a:active {
-        color: brown;
-    }
-}

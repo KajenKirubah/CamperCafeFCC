@@ -1,0 +1,48 @@
+.item {
+    margin-top: 20px;
+
+    @mixin atSmall {
+        margin-top: 0;
+    }
+    &::after {
+        content: "";
+        display: block;
+        border-bottom: 1px dashed black;
+        width: 10%;
+        margin: auto;
+
+        @mixin atSmall {
+            display: none;
+            border: none;
+        }
+    }
+    p {
+        margin: 10px auto;
+        font-size: 2rem;
+
+        @mixin atSmall {
+            margin: 5px 0;
+            font-size: 1.8rem;
+            display: inline-block;
+        }
+    }
+
+    &__flavor,
+    &__dessert {
+        text-align: center;
+
+        @mixin atSmall {
+            text-align: left;
+            width: 75%;
+        }
+    }
+
+    &__price {
+        text-align: center;
+
+        @mixin atSmall {
+            text-align: right;
+            width: 25%;
+        }
+    }
+}

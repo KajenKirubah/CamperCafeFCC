@@ -6,7 +6,12 @@ const currentTask = process.env.npm_lifecycle_event;
 console.log("current task is " + currentTask);
 
 
-const postCSSPlugins = [require('postcss-mixins'), require('autoprefixer'), require("postcss-nested")]
+const postCSSPlugins = [
+  require("postcss-import"),
+  require('postcss-mixins'), 
+  require('autoprefixer'), 
+  require("postcss-nested")
+]
 
 module.exports = {
   entry: {
@@ -51,6 +56,7 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, "docs"),
     },
+    port: 3000
   },
   optimization: {
     splitChunks: {
