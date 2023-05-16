@@ -1,0 +1,125 @@
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./app/styles/styles.css ***!
+  \***********************************************************************************************************************************************/
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+footer a {
+        color: black;
+    }
+footer a:visited {
+        color: black;
+    }
+footer a:hover {
+        color: brown;
+    }
+footer a:active {
+        color: brown;
+    }
+.item {
+    margin-top: 20px;
+}
+@media (min-width: 530px) {
+.item {
+        margin-top: 0;
+}
+    }
+.item::after {
+        content: "";
+        display: block;
+        border-bottom: 1px dashed black;
+        width: 10%;
+        margin: auto;
+    }
+@media (min-width: 530px) {
+.item::after {
+            display: none;
+            border: none
+    }
+    }
+.item p {
+        margin: 10px auto;
+        font-size: 2rem;
+    }
+@media (min-width: 530px) {
+.item p {
+            margin: 5px 0;
+            font-size: 1.8rem;
+            display: inline-block
+    }
+    }
+.item__flavor,
+    .item__dessert {
+        text-align: center;
+    }
+@media (min-width: 530px) {
+.item__flavor,
+    .item__dessert {
+            text-align: left;
+            width: 75%
+    }
+    }
+.item__price {
+        text-align: center;
+    }
+@media (min-width: 530px) {
+.item__price {
+            text-align: right;
+            width: 25%
+    }
+    }
+.submenu {
+    margin-bottom: 15px;
+}
+@media (min-width: 530px) {
+.submenu {
+        margin-bottom: 0
+}
+    }
+html {
+    font-size: 62.5%;
+}
+h1, h2, p {
+    text-align: center;
+}
+h1, h2 {
+    font-family: Impact, serif;
+}
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+h2 {
+    font-size: 30px;
+}
+body {
+    background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+    font-family: sans-serif;
+    padding: 20px;
+}
+.menu {
+    width: 80%;
+    max-width: 500px;
+    background-color: burlywood;
+    margin: 0 auto;
+    padding: 20px;
+}
+.established {
+    font-style: italic;
+}
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -25px;
+}
+.bottom-line {
+    margin-top: 25px;
+}
+
+
